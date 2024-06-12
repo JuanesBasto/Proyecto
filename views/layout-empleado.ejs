@@ -27,7 +27,7 @@
       href="../assets/img/apple-icon.png"
     />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-    <title>Modulo administrador Serv&Salud</title>
+    <title>Modulo empleado Serv&Salud</title>
     <!--     Fonts and icons     -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
@@ -67,32 +67,6 @@
             <li>
               <a
                 data-toggle="collapse"
-                href="#manage-users"
-                aria-expanded="true"
-              >
-                <i class="tim-icons icon-single-02"></i>
-                <span class="nav-link-text">Gestionar Usuarios</span>
-              </a>
-              <div class="collapse" id="manage-users">
-                <ul class="nav pl-4">
-                  <li>
-                    <a href="ver-usuarios"
-                      ><i class="tim-icons icon-bullet-list-67"></i>
-                      <p>Ver Usuarios</p></a
-                    >
-                  </li>
-                  <li>
-                    <a href="register"
-                      ><i class="tim-icons icon-simple-add"></i>
-                      <p>Registrar Usuarios</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a
-                data-toggle="collapse"
                 href="#medication-delivery"
                 aria-expanded="true"
               >
@@ -102,13 +76,13 @@
               <div class="collapse" id="medication-delivery">
                 <ul class="nav pl-4">
                   <li>
-                    <a href="registrar-entrega"
-                      ><i class="tim-icons icon-simple-add"></i>
+                    <a href="registrar-entrega">
+                      <i class="tim-icons icon-simple-add"></i>
                       <p>
-                        Registrar Fecha de <br />
+                        Registrar Fecha de<br />
                         Entrega
-                      </p></a
-                    >
+                      </p>
+                    </a>
                   </li>
                   <li>
                     <a href="ver-entregas"
@@ -119,34 +93,38 @@
                 </ul>
               </div>
             </li>
-            <li class="nav">
+            <li>
               <a
                 data-toggle="collapse"
                 href="#lab-scheduling"
                 aria-expanded="true"
               >
                 <i class="tim-icons icon-atom"></i>
-                
-                <span class="nav-link-text">Programación de Laboratorios</span>
+                <span class="nav-link-text" style="color: #fff"
+                  >Programación de Laboratorios</span
+                >
               </a>
               <div class="collapse" id="lab-scheduling">
                 <ul class="nav pl-4">
                   <li>
-                    <a href="registrar-laboratorio" class="nav-link">
+                    <a href="registrar-laboratorio">
                       <i class="tim-icons icon-simple-add"></i>
-                      <p>Registrar Fecha de <br />Laboratorio</p>
+                      <p>
+                        Registrar Fecha de<br />
+                        Laboratorio
+                      </p>
+                      <!-- Salto de línea agregado -->
                     </a>
                   </li>
                   <li>
-                    <a href="ver-laboratorios" class="nav-link">
-                      <i class="tim-icons icon-calendar-60"></i>
-                      <p>Ver Fechas de Laboratorio</p>
-                    </a>
+                    <a href="ver-laboratorios"
+                      ><i class="tim-icons icon-calendar-60"></i>
+                      <p>Ver Fechas de Laboratorio</p></a
+                    >
                   </li>
                 </ul>
               </div>
             </li>
-
             <li>
               <a
                 data-toggle="collapse"
@@ -159,45 +137,25 @@
               <div class="collapse" id="appointment-scheduling">
                 <ul class="nav pl-4">
                   <li>
-                    <a href="registrar-cita"
-                      ><i class="tim-icons icon-simple-add"></i>
-                      <p>Registrar Fecha de <br />Cita/Procedimiento</p></a
-                    >
-                  </li>
-                  <li>
-                    <a href="ver-citas"
-                      ><i class="tim-icons icon-calendar-60"></i>
-                      <p>Ver Fechas de <br />Cita/Procedimiento</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a data-toggle="collapse" href="#accounting" aria-expanded="true">
-                <i class="tim-icons icon-bank"></i>
-                <span class="nav-link-text">Contabilidad</span>
-              </a>
-              <div class="collapse" id="accounting">
-                <ul class="nav pl-4">
-                  <li>
-                    <a href="registrar-servicio"
-                      ><i class="tim-icons icon-simple-add"></i>
+                    <a href="registrar-cita">
+                      <i class="tim-icons icon-simple-add"></i>
                       <p>
-                        Registrar Servicio<br />
-                        Prestado
-                      </p></a
-                    >
+                        Registrar Fecha de<br />
+                        Cita/Procedimiento
+                      </p>
+                      <!-- Salto de línea agregado -->
+                    </a>
                   </li>
                   <li>
-                    <a href="ver-informes"
-                      ><i class="tim-icons icon-notes"></i>
-                      <p>Ver Informes de Servicios</p></a
-                    >
+                    <a href="ver-citas">
+                      <i class="tim-icons icon-calendar-60"></i>
+                      <p>Ver Fechas de <br>Cita/Procedimiento</p>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
+            
           </ul>
         </div>
       </div>

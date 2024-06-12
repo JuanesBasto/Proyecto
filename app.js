@@ -43,9 +43,11 @@ const { title } = require("process");
 const ensureAuthenticated = (req, res, next) => {
   if (req.session.loggedin) {
     if (req.session.role === "paciente") {
-      req.layout = 'layout-paciente'; //establecer un layout para el usuario paciente
+      req.layout = "layout-paciente"; //establecer un layout para el usuario paciente
     } else if (req.session.role === "administrador") {
-      req.layout = 'layout';// Establecer el layout predeterminado
+      req.layout = "layout"; // Establecer el layout predeterminado
+    } else if (req.session.role === "empleado") {
+      req.layout = "layout-empleado"; //establecer un layout para el rol empleado
     }
     return next();
   } else {
@@ -77,12 +79,12 @@ app.get("/home", ensureAuthenticated, (req, res) => {
 
 app.get("/tables", ensureAuthenticated, (req, res) => {
   res.render("tables");
-  layout: req.layout
+  layout: req.layout;
 });
 
 app.get("/notifications", ensureAuthenticated, (req, res) => {
   res.render("notifications");
-  layout: req.layout
+  layout: req.layout;
 });
 
 // Registro

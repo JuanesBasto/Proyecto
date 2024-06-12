@@ -17329,6 +17329,11 @@ table.tablesorter thead tr .headerSortDown {
   height: auto;
 }
 
+.sidebar-wrapper .nav-link-text{
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+
 .sidebar-wrapper ul li div.collapse ul li div.collapse ul li a,
 .sidebar-wrapper ul li div.collapse ul li div.collapsing ul li a,
 .sidebar-wrapper ul li div.collapsing ul li div.collapse ul li a {
